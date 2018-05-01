@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <parameter name="phone"  value="18688886666"/>
+    <parameter name="password"  value="123456"/>
+    <test name="apiTest" >
+        <classes>
+            <class name="apis.body" >
+            <methods>
+                <include name="jsonBodyTest"/>
+            </methods>
+            </class>
+        </classes>
+
+    </test>
+
+
+</suite>
